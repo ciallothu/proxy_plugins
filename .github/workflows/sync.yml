@@ -1,0 +1,42 @@
+name: Sync plugins
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 19 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "tools/sync_plugins.py"
+      - ".github/workflows/sync.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-plugins
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Mirror and rewrite dependencies
+        run: python3 tools/sync_plugins.py
+
+      - name: Commit synchronized files
+        run: |
+          if git diff --quiet -- . ':!.github/workflows/sync.yml' && [ -z "$(git status --porcelain --untracked-files=all)" ]; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add modules scripts rules MANIFEST.json SOURCES.md
+          git commit -m "chore: sync upstream proxy plugins"
+          git push
