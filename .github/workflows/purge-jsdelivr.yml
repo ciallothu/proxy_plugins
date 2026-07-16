@@ -1,0 +1,68 @@
+name: Purge jsDelivr cache
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "modules/**"
+      - "scripts/**"
+      - "rules/**"
+      - "MANIFEST.json"
+      - "SOURCES.md"
+      - ".github/workflows/purge-jsdelivr.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: purge-jsdelivr
+  cancel-in-progress: false
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Purge all mirrored files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -u
+
+          if [ "$(gh api "repos/${GITHUB_REPOSITORY}" --jq '.private')" = "true" ]; then
+            echo "Repository is private; jsDelivr cannot serve it. Make it public and manually dispatch this workflow once."
+            exit 0
+          fi
+
+          python3 - <<'PY' > /tmp/jsdelivr-paths.txt
+          import json
+          from pathlib import Path
+
+          manifest = json.loads(Path("MANIFEST.json").read_text(encoding="utf-8"))
+          paths = [item["path"] for item in manifest.get("files", [])]
+          paths.extend(["MANIFEST.json", "SOURCES.md"])
+          print("\n".join(dict.fromkeys(paths)))
+          PY
+
+          failures=0
+          while IFS= read -r path; do
+            [ -n "$path" ] || continue
+            url="https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/${path}"
+            echo "Purging ${url}"
+            curl \
+              --fail \
+              --location \
+              --silent \
+              --show-error \
+              --retry 5 \
+              --retry-delay 2 \
+              --retry-all-errors \
+              "$url" || failures=$((failures + 1))
+          done < /tmp/jsdelivr-paths.txt
+
+          if [ "$failures" -gt 0 ]; then
+            echo "Warning: ${failures} purge requests failed. Branch URLs otherwise expire from CDN cache naturally."
+          fi
