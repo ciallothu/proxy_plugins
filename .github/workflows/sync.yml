@@ -33,7 +33,32 @@ jobs:
           ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Mirror and rewrite dependencies
-        run: python3 tools/sync_plugins.py
+        run: |
+          python3 - <<'PY'
+          import importlib.util
+          from pathlib import Path
+
+          path = Path("tools/sync_plugins.py")
+          spec = importlib.util.spec_from_file_location("sync_plugins", path)
+          module = importlib.util.module_from_spec(spec)
+          assert spec and spec.loader
+          spec.loader.exec_module(module)
+
+          original_fetch = module.fetch
+          kelee_commit = "ab6c3182fb2b09bcc34456f496282ec0b8e9217b"
+
+          def fetch_with_fallback(url: str, attempts: int = 4) -> bytes:
+              if url.startswith("https://kelee.one/"):
+                  filename = url.rsplit("/", 1)[-1]
+                  url = (
+                      "https://raw.githubusercontent.com/mihoyo-typ/KeleeOne/"
+                      f"{kelee_commit}/Script/{filename}"
+                  )
+              return original_fetch(url, attempts)
+
+          module.fetch = fetch_with_fallback
+          raise SystemExit(module.main())
+          PY
 
       - name: Commit synchronized files
         run: |
