@@ -48,7 +48,6 @@ compat_arguments_desc: |
   5️⃣ produce_cronexp
 
   配置处理订阅的定时任务
-
   默认为每 6 小时
 
   6️⃣ sync_success_notify
@@ -75,7 +74,7 @@ scriptings:
   - http_request:
       name: Sub-Store Core
       match: ^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info)))
-      script_url: https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js
+      script_url: https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js
       body_required: true
       max_size: 999999999
       timeout: 900
@@ -84,7 +83,7 @@ scriptings:
   - http_request:
       name: Sub-Store Simple
       match: ^https?:\/\/sub\.store
-      script_url: https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js
+      script_url: https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js
       body_required: true
       max_size: 999999999
       timeout: 900
@@ -93,14 +92,14 @@ scriptings:
   - schedule:
       name: "{{{sync}}}"
       cron: "{{{cronexp}}}"
-      script_url: https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
+      script_url: https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
       timeout: 900
       arguments:
         _compat.$argument: "sync_success_notify={{{sync_success_notify}}}"
   - schedule:
       name: "{{{produce}}}"
       cron: "{{{produce_cronexp}}}"
-      script_url: https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
+      script_url: https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
       timeout: 900
       arguments:
         _compat.$argument: "sub={{{produce_sub}}}&col={{{produce_col}}}"
