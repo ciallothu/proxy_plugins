@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "37 19 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "tools/sync_plugins.py"
+      - ".github/workflows/sync.yml"
 
 permissions:
   contents: write
