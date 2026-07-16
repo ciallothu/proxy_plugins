@@ -22,7 +22,7 @@ from urllib.parse import quote, unquote, urlparse
 from urllib.request import Request, urlopen
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-RAW_BASE = "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/"
+RAW_BASE = "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/"
 USER_AGENT = "proxy_plugins-sync/1.0 (+https://github.com/ciallothu/proxy_plugins)"
 
 TOP_LEVEL_SOURCES: dict[str, str] = {
