@@ -9,12 +9,17 @@ on:
     paths:
       - "tools/sync_plugins.py"
       - ".github/workflows/sync.yml"
+  pull_request:
+    paths:
+      - "tools/sync_plugins.py"
+      - ".github/workflows/sync.yml"
+      - ".github/sync-trigger"
 
 permissions:
   contents: write
 
 concurrency:
-  group: sync-plugins
+  group: sync-plugins-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -25,6 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Mirror and rewrite dependencies
         run: python3 tools/sync_plugins.py
