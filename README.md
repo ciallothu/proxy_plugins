@@ -9,16 +9,23 @@ Surge / Egern 外部模块、脚本与规则依赖的自托管镜像。
 - `scripts/vendor/`：模块内嵌的 `script-path` / `script_url` 依赖。
 - `rules/vendor/`：模块内嵌的远程规则依赖。
 - `audit/SECURITY_AUDIT.md`：安全审计结论。
-- `MANIFEST.json`：来源、SHA-256、大小与同步时间。
+- `MANIFEST.json`：来源、CDN URL、SHA-256、大小与同步时间。
 - `tools/sync_plugins.py`：可复现同步与 URL 重写脚本。
 
 ## 使用条件
 
-远程配置客户端不能匿名读取 GitHub 私有仓库内容。本仓库必须为 **Public**，配置中的 `raw.githubusercontent.com` URL 才能直接工作。不要向本仓库提交订阅令牌、API Key、MITM CA 私钥或其他凭据。
+Surge 与 Egern 通过 jsDelivr 读取本仓库，URL 格式为：
 
-## 更新
+`https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/<path>`
 
-GitHub Actions 每日同步一次，也可在 Actions 页面手动运行 `Sync plugins`。
+jsDelivr 只能分发公开 GitHub 仓库，因此本仓库必须为 **Public**。不要向本仓库提交订阅令牌、API Key、MITM CA 私钥、未脱敏客户端配置或其他凭据。
+
+## 更新与缓存
+
+- `Sync plugins` 每日抓取一次上游，并把变化提交到草稿 PR；审核后才合并到 `main`。
+- `Purge jsDelivr cache` 在 `main` 的镜像文件变化后逐个刷新 `MANIFEST.json` 中记录的 CDN URL。
+- 仓库从 Private 改成 Public 后，需要手动运行一次 `Purge jsDelivr cache`。
+- 生产环境也可以使用具体 commit SHA 替代 `@main`，获得不可变内容；使用 `@main` 时依赖缓存刷新工作流及时生效。
 
 ## 上游与许可证
 
