@@ -4,33 +4,24 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "37 19 * * *"
-  push:
-    branches: [main]
-    paths:
-      - "tools/sync_plugins.py"
-      - ".github/workflows/sync.yml"
-  pull_request:
-    paths:
-      - "tools/sync_plugins.py"
-      - ".github/workflows/sync.yml"
-      - ".github/sync-trigger"
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
-  group: sync-plugins-${{ github.event.pull_request.number || github.ref }}
+  group: sync-plugins
   cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
+      - name: Check out reviewed snapshot
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           fetch-depth: 0
-          ref: ${{ github.head_ref || github.ref_name }}
+          ref: main
 
       - name: Mirror and rewrite dependencies
         run: |
@@ -60,14 +51,39 @@ jobs:
           raise SystemExit(module.main())
           PY
 
-      - name: Commit synchronized files
+      - name: Open or refresh review pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          if git diff --quiet -- . ':!.github/workflows/sync.yml' && [ -z "$(git status --porcelain --untracked-files=all)" ]; then
-            echo "No changes"
+          if git diff --quiet -- . && [ -z "$(git status --porcelain --untracked-files=all)" ]; then
+            echo "No upstream changes"
             exit 0
           fi
+
+          branch="automation/sync-plugins"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C "$branch"
           git add modules scripts rules MANIFEST.json SOURCES.md
           git commit -m "chore: sync upstream proxy plugins"
-          git push
+          git push --force origin "$branch"
+
+          cat > /tmp/pr-body.md <<'EOF'
+          Automated upstream plugin refresh.
+
+          Review `MANIFEST.json`, `SOURCES.md`, module permission changes, MITM hostname changes, and JavaScript diffs before merging. The reviewed `main` branch remains unchanged until this pull request is explicitly merged.
+          EOF
+
+          pr_number="$(gh pr list --head "$branch" --base main --state open --json number --jq '.[0].number // empty')"
+          if [ -z "$pr_number" ]; then
+            gh pr create \
+              --draft \
+              --base main \
+              --head "$branch" \
+              --title "chore: review upstream plugin updates" \
+              --body-file /tmp/pr-body.md
+          else
+            gh pr edit "$pr_number" \
+              --title "chore: review upstream plugin updates" \
+              --body-file /tmp/pr-body.md
+          fi
