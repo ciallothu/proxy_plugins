@@ -42,7 +42,7 @@ TOP_LEVEL_SOURCES: dict[str, str] = {
     "modules/ads/didi.sgmodule": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E6%BB%B4%E6%BB%B4%E5%87%BA%E8%A1%8C%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
     "modules/ads/zhihu.sgmodule": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E7%9F%A5%E4%B9%8E%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
     "modules/ads/wechat-official.sgmodule": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
-    "modules/ads/wechat-miniprogram.sgmodule": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
+    "modules/ads/wechat-miniprogram.sgmodule": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BA%8F%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
     "modules/ads/tencent-docs.sgmodule": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
     "modules/ads/taobao.sgmodule": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E6%B7%98%E5%AE%9D%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
     "modules/ads/xiaohongshu.sgmodule": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
@@ -146,7 +146,19 @@ def clean_generated_directories() -> None:
             shutil.rmtree(path)
 
 
+def load_previous_manifest() -> dict:
+    path = REPO_ROOT / "MANIFEST.json"
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
 def main() -> int:
+    previous_manifest = load_previous_manifest()
     clean_generated_directories()
     provenance: dict[str, str] = {}
     queue: list[str] = []
@@ -179,7 +191,7 @@ def main() -> int:
             for old, new in replacements.items():
                 text = text.replace(old, new)
             path.write_text(text, encoding="utf-8")
-    generated_at = datetime.now(timezone.utc).isoformat()
+
     manifest_files = []
     for relative_path, source in sorted(provenance.items()):
         data = (REPO_ROOT / relative_path).read_bytes()
@@ -190,15 +202,33 @@ def main() -> int:
             "sha256": hashlib.sha256(data).hexdigest(),
             "size": len(data),
         })
-    manifest = {"repository": "ciallothu/proxy_plugins", "generated_at": generated_at, "files": manifest_files}
-    (REPO_ROOT / "MANIFEST.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    if previous_manifest.get("files") == manifest_files and previous_manifest.get("generated_at"):
+        generated_at = previous_manifest["generated_at"]
+    else:
+        generated_at = datetime.now(timezone.utc).isoformat()
+
+    manifest = {
+        "repository": "ciallothu/proxy_plugins",
+        "generated_at": generated_at,
+        "files": manifest_files,
+    }
+    (REPO_ROOT / "MANIFEST.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     lines = [
         "# Upstream sources", "", f"Last synchronized: `{generated_at}`", "",
         "| Mirror path | Upstream source | SHA-256 |", "|---|---|---|",
     ]
     for item in manifest_files:
         lines.append(f"| `{item['path']}` | {item['source']} | `{item['sha256']}` |")
-    lines.extend(["", "Third-party files retain their original copyright and licensing terms.", "The mirror does not grant a new license where an upstream project provides none.", ""])
+    lines.extend([
+        "",
+        "Third-party files retain their original copyright and licensing terms.",
+        "The mirror does not grant a new license where an upstream project provides none.",
+        "",
+    ])
     (REPO_ROOT / "SOURCES.md").write_text("\n".join(lines), encoding="utf-8")
     print(f"mirrored {len(manifest_files)} files")
     return 0
