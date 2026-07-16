@@ -9,6 +9,7 @@ on:
     paths:
       - "tools/sync_plugins.py"
       - ".github/workflows/sync.yml"
+      - ".github/sync-trigger"
 
 permissions:
   contents: write
