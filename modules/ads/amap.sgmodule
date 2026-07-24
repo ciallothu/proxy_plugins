@@ -83,3 +83,4 @@ http-response-jq ^https:\/\/m5-zb\.amap\.com\/ws\/sharedtrip\/taxi\/order_detail
 
 [MITM]
 hostname = %APPEND% *.amap.com
+

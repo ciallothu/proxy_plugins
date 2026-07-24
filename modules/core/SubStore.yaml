@@ -48,6 +48,7 @@ compat_arguments_desc: |
   5️⃣ produce_cronexp
 
   配置处理订阅的定时任务
+
   默认为每 6 小时
 
   6️⃣ sync_success_notify

@@ -1,451 +1,451 @@
 {
   "repository": "ciallothu/proxy_plugins",
-  "generated_at": "2026-07-16T02:44:23.623573+00:00",
+  "generated_at": "2026-07-24T20:48:44.781237+00:00",
   "files": [
     {
       "path": "modules/ads/ad-platform-blocker.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/ad-platform-blocker.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/ad-platform-blocker.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%B9%BF%E5%91%8A%E5%B9%B3%E5%8F%B0%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule",
       "sha256": "a6aac68223851e646423dfb22c50e1dcd38301f067d9355b6dcc2a8a999ee591",
       "size": 22473
     },
     {
       "path": "modules/ads/amap.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/amap.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/amap.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E5%8E%BB%E5%B9%BF%E5%91%8A.sgmodule",
-      "sha256": "32aa1dfd1775a49c8ba8cd8612e572a0bfd0c4e5f8859c921dbd15ade7eefe6e",
-      "size": 8231
+      "sha256": "4c434c7f2b37b92d3a7425be2bdca11223ab198b65805e8cd763b4af45adf795",
+      "size": 8147
     },
     {
       "path": "modules/ads/baidu-netdisk.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/baidu-netdisk.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/baidu-netdisk.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
       "sha256": "8588b9f9f96ca1a67742a1c5de58081853924e4189da7ff06986baa636bbb947",
       "size": 1679
     },
     {
       "path": "modules/ads/didi.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/didi.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/didi.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E6%BB%B4%E6%BB%B4%E5%87%BA%E8%A1%8C%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
       "sha256": "14cd392ba4a7a9b4300096f3cba3df2a61a6ae8604792200045a852117dc73ec",
       "size": 5403
     },
     {
       "path": "modules/ads/general-ad-block.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/general-ad-block.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/general-ad-block.sgmodule",
       "source": "https://raw.githubusercontent.com/vhvg/Surge-2/master/Module/Ad%20Block.sgmodule",
       "sha256": "8e12a62362b35e55063fe3ad165e42a44abba6fe24fd56dba53b86138bf050e5",
       "size": 19026
     },
     {
       "path": "modules/ads/jd-waimai.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/jd-waimai.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/jd-waimai.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E4%BA%AC%E4%B8%9C%E5%A4%96%E5%8D%96%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
       "sha256": "6ae3a412712023a9ab9c872cc06fdc4219efad782036d688a2feebad5f24fd3a",
       "size": 2023
     },
     {
       "path": "modules/ads/jd.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/jd.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/jd.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E4%BA%AC%E4%B8%9C%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
-      "sha256": "1f4b45c93a36e7989570355162be0a3bbf6b194ad15a40f5d87f45dbac375c5f",
-      "size": 1888
+      "sha256": "4e1ce12881c6180b367c53f0a28619d99d38804496dfaa93dd52d32b28e7cae7",
+      "size": 1882
     },
     {
       "path": "modules/ads/kelee-filter.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/kelee-filter.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/kelee-filter.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%8F%AF%E8%8E%89%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4%E5%99%A8.beta.sgmodule",
       "sha256": "26023ec654f2b67f6548702d5ef5cf98255cf2dc46288fb6d61f21a17f7ddf87",
       "size": 12641
     },
     {
       "path": "modules/ads/netease-music.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/netease-music.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/netease-music.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
-      "sha256": "664c3262af5658e1c83d4bb64185c02ba509423f2c2dca009396a94f7729de31",
-      "size": 4680
+      "sha256": "874caa2372b5a33637a2763989df864b24c808c5860109f8f9ece05dd2bb16bb",
+      "size": 4644
     },
     {
       "path": "modules/ads/pinduoduo.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/pinduoduo.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/pinduoduo.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
       "sha256": "0dbb36f52914f1db7c2ce33bb80fd6bd10c7c4b8c94212cd8a98bdbb8028aaa7",
       "size": 7106
     },
     {
       "path": "modules/ads/qidian.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/qidian.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/qidian.sgmodule",
       "source": "https://raw.githubusercontent.com/app2smile/rules/master/module/qidian.sgmodule",
-      "sha256": "de5f329dbe78e02219e573ee90c6b5fcc48e8b8ec7c66c98cfd83afaace19d84",
-      "size": 1273
+      "sha256": "a16fa48dee14506618cf10627d414fc81c648c504bbfd06ff338cdbb3dbf9207",
+      "size": 1267
     },
     {
       "path": "modules/ads/quark.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/quark.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/quark.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%A4%B8%E5%85%8B%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
       "sha256": "978f34e98487aaeb80b57c8a7bde208e6b631c3dd18da1fceea6a1cc35ae9b95",
       "size": 85594
     },
     {
       "path": "modules/ads/taobao.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/taobao.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/taobao.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E6%B7%98%E5%AE%9D%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
-      "sha256": "9a7300a3d95409fbe24a601d5ea71b2922f6d633c9d1e0e39323cb1e1c048f49",
-      "size": 3393
+      "sha256": "e1f0902b376b12bb1f141cafd74d01dcf7434c20903348a3495277643d3d080f",
+      "size": 3381
     },
     {
       "path": "modules/ads/tencent-docs.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/tencent-docs.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/tencent-docs.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
       "sha256": "f6c72650eca182cdf3c0e01112d2a1d3f008441496493a0ba7d2047e8d66ce07",
       "size": 788
     },
     {
       "path": "modules/ads/tieba.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/tieba.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/tieba.sgmodule",
       "source": "https://raw.githubusercontent.com/app2smile/rules/master/module/tieba.sgmodule",
-      "sha256": "b9f745e7b1030007987d45d8668a0fdbc8693088eb49b24c8548348497394a71",
-      "size": 1451
+      "sha256": "ea9b73ece1a58c976c0b65996587aa7ab211f67e28149513b842da9d3ff93b45",
+      "size": 1433
     },
     {
       "path": "modules/ads/wechat-miniprogram.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/wechat-miniprogram.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/wechat-miniprogram.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
-      "sha256": "776ec8844c3515d14a5cbc345c17b3d02268e744d9798967f5ea1ba69ccd9256",
-      "size": 23183
+      "sha256": "2f436a620a5739d7e2f6048e0b037ebd6d144d20da07a4895495a4a1de9f621e",
+      "size": 23111
     },
     {
       "path": "modules/ads/wechat-official.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/wechat-official.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/wechat-official.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
       "sha256": "bea63891dfbce983bccf36540749f262e205c4217d61ae363a6419d505615471",
       "size": 824
     },
     {
       "path": "modules/ads/weibo.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/weibo.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/weibo.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%BE%AE%E5%8D%9A%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
-      "sha256": "11693c668eb1f49c95f380120231fed2bef9c94233bfe91beec19586732dd0e0",
-      "size": 9061
+      "sha256": "7ac1c58e74e9dd563761614b758ad5e4fa9df6d9515936f5908559a16cc3ab6f",
+      "size": 8947
     },
     {
       "path": "modules/ads/xiaohongshu.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/xiaohongshu.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/xiaohongshu.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
-      "sha256": "94e8eca219a20956515bce176c8a1748fb0157a44513f3f665ab1aae030553a4",
-      "size": 6157
+      "sha256": "9d495a6e7a81643f6c2d9538819c3d9c47b8b026f9a323a9752e8877cbe9feb3",
+      "size": 6085
     },
     {
       "path": "modules/ads/zhihu.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/ads/zhihu.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/ads/zhihu.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E7%9F%A5%E4%B9%8E%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
-      "sha256": "47275f06ca4dd6a39d0682bde4249523b1b34e5ee9d55d1b8812c367abb7b5f3",
-      "size": 8330
+      "sha256": "72a1c765f8da8d2ea9632b60c2e15c66d061f0f86f6d82f4237ebc7968dd3144",
+      "size": 8270
     },
     {
       "path": "modules/bilibili/BiliBili.ADBlock.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/bilibili/BiliBili.ADBlock.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/bilibili/BiliBili.ADBlock.sgmodule",
       "source": "https://github.com/BiliUniverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule",
-      "sha256": "cf18844bf03b3ca12025622cf08e0b196cd8badd5bf8832824da53a43a9976d8",
-      "size": 17637
+      "sha256": "c5e6ee76acece3f72b88d5fa987123204e16b96b95053e745c736982b1f90af0",
+      "size": 17559
     },
     {
       "path": "modules/core/BoxJs.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/core/BoxJs.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/core/BoxJs.sgmodule",
       "source": "https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.surge.sgmodule",
-      "sha256": "e7b48d262a0b74bbba18c475fad4b2684a5986f5a8d593f219e8619c58854960",
-      "size": 614
+      "sha256": "159fc76e4c03ca5af1eb495a0751abe8a69c8121e053229c6b78a27600299efd",
+      "size": 608
     },
     {
       "path": "modules/core/Script-Hub.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/core/Script-Hub.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/core/Script-Hub.sgmodule",
       "source": "https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.surge.sgmodule",
-      "sha256": "c41f32a4be58b0103d27bebe7b5f0a98cecc12a023f09331d27a458080e1a124",
-      "size": 1486
+      "sha256": "9519cb09e08dd8b4e479d591a728bd6e9ebca867ff1cee26b0f56f183aee7e1a",
+      "size": 1462
     },
     {
       "path": "modules/core/SubStore.yaml",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/core/SubStore.yaml",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/core/SubStore.yaml",
       "source": "https://raw.githubusercontent.com/sub-store-org/Sub-Store/refs/heads/master/config/Egern.yaml",
-      "sha256": "0854bdfd8f90a3b98238ea718d3d19a15d3a61a15b336b42316a7a0ae79d4fb9",
-      "size": 3631
+      "sha256": "cc72d1d9a8af9dc1d1bd7c457a4372ce9b7ef9932db44bd6e585eda571d2f26d",
+      "size": 3607
     },
     {
       "path": "modules/core/iRingo.WeatherKit.Workers.srmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/core/iRingo.WeatherKit.Workers.srmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/core/iRingo.WeatherKit.Workers.srmodule",
       "source": "https://github.com/NSRingo/WeatherKit/raw/main/modules/iRingo.WeatherKit.Workers.srmodule",
       "sha256": "5b8392475b1dea1eff64648360df6d90beedc9527013e2adba432afb3801c62e",
       "size": 1222
     },
     {
       "path": "modules/network/block-httpdns.sgmodule",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/modules/network/block-httpdns.sgmodule",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/modules/network/block-httpdns.sgmodule",
       "source": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E6%8B%A6%E6%88%AAHTTPDNS.beta.sgmodule",
       "sha256": "41640dadefa3435cb64c54ec73d641bffacf72fc2ef9cbc7e6be9b2834c42215",
       "size": 11766
     },
     {
       "path": "rules/vendor/app2smile/rules/rule/tieba-ad.list",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/rules/vendor/app2smile/rules/rule/tieba-ad.list",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/rules/vendor/app2smile/rules/rule/tieba-ad.list",
       "source": "https://raw.githubusercontent.com/app2smile/rules/master/rule/tieba-ad.list",
       "sha256": "93599502d9498d4977f007d89511b2918afc6398dad5b8cece25057b2fbff7a3",
       "size": 86
     },
     {
       "path": "scripts/vendor/BiliUniverse/ADBlock/releases/download/v0.6.24/request.bundle.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/BiliUniverse/ADBlock/releases/download/v0.6.24/request.bundle.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/BiliUniverse/ADBlock/releases/download/v0.6.24/request.bundle.js",
       "source": "https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.24/request.bundle.js",
       "sha256": "adc2f2f2e09466ab9f21f4a0e39e212a741b753279b993a773c23af81bf43ecf",
       "size": 20931
     },
     {
       "path": "scripts/vendor/BiliUniverse/ADBlock/releases/download/v0.6.24/response.bundle.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/BiliUniverse/ADBlock/releases/download/v0.6.24/response.bundle.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/BiliUniverse/ADBlock/releases/download/v0.6.24/response.bundle.js",
       "source": "https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.24/response.bundle.js",
       "sha256": "f805f7dd5dad9f43ac67ce47b9d3ac294b5848a59b1d0ea9d504707fe406f4a1",
       "size": 862323
     },
     {
       "path": "scripts/vendor/Script-Hub-Org/Script-Hub/Rewrite-Parser.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/Script-Hub-Org/Script-Hub/Rewrite-Parser.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/Script-Hub-Org/Script-Hub/Rewrite-Parser.js",
       "source": "https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/Rewrite-Parser.js",
       "sha256": "c5e46afa219424e22bcba151dbd6f5e4c6caf518cfdf3317381f4c7e2068e51b",
       "size": 114680
     },
     {
       "path": "scripts/vendor/Script-Hub-Org/Script-Hub/rule-parser.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/Script-Hub-Org/Script-Hub/rule-parser.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/Script-Hub-Org/Script-Hub/rule-parser.js",
       "source": "https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/rule-parser.js",
       "sha256": "6d30380cc68e112b5bcb5d9b2013d553d3c48612b1c61e78f0e0bfae3e48ca2c",
       "size": 24403
     },
     {
       "path": "scripts/vendor/Script-Hub-Org/Script-Hub/script-converter.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/Script-Hub-Org/Script-Hub/script-converter.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/Script-Hub-Org/Script-Hub/script-converter.js",
       "source": "https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-converter.js",
       "sha256": "27fc22ac5a40364fbe0728d7264e163431656e7b142cde6337ecad11e5d60b78",
       "size": 29542
     },
     {
       "path": "scripts/vendor/Script-Hub-Org/Script-Hub/script-hub.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/Script-Hub-Org/Script-Hub/script-hub.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/Script-Hub-Org/Script-Hub/script-hub.js",
       "source": "https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-hub.js",
       "sha256": "6a0c1d8e05136e7f134bfbf0dd94a8ab7356b22607a1ba7bace57820e2bc7af1",
       "size": 259406
     },
     {
       "path": "scripts/vendor/app2smile/rules/js/qidian.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/app2smile/rules/js/qidian.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/app2smile/rules/js/qidian.js",
       "source": "https://raw.githubusercontent.com/app2smile/rules/master/js/qidian.js",
       "sha256": "e599a063040ecb222ad5d4f8666157ef1ee31495aef6d87fb13453dce46f5c19",
       "size": 5761
     },
     {
       "path": "scripts/vendor/app2smile/rules/js/tieba-json.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/app2smile/rules/js/tieba-json.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/app2smile/rules/js/tieba-json.js",
       "source": "https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js",
       "sha256": "91040c0d5bf906357829d8df344a3bdce00b59e6c24f255e54a2ef7a46d04c69",
       "size": 9971
     },
     {
       "path": "scripts/vendor/app2smile/rules/js/tieba-proto.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/app2smile/rules/js/tieba-proto.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/app2smile/rules/js/tieba-proto.js",
       "source": "https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js",
       "sha256": "6015d737870b6d89c38a0181479ed715e07d11b5a2c3746f96f95e25835e8610",
       "size": 97069
     },
     {
       "path": "scripts/vendor/chavyleung/scripts/box/chavy.boxjs.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/chavyleung/scripts/box/chavy.boxjs.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/chavyleung/scripts/box/chavy.boxjs.js",
       "source": "https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js",
       "sha256": "24ab4513d9b210d3921f87660175ddf408f2c4728a01ecb391082e82d8f8ffa6",
       "size": 52473
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js",
       "source": "https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js",
       "sha256": "12eb78582ed66e768377bd0c5a8b8300cdf6844469491fcedcd2c1270aa6d535",
       "size": 23251
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/JD/JD_remove_ads.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/JD/JD_remove_ads.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/JD/JD_remove_ads.js",
       "source": "https://kelee.one/Resource/JavaScript/JD/JD_remove_ads.js",
       "sha256": "813d8882341b1d38d1316790d6004b730655d51f48b534f29312ccc782ccba38",
       "size": 6902
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js",
       "source": "https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js",
       "sha256": "86291030a9a44c242465cee88f96b212a2140492228a8777509122f2d7df6da2",
       "size": 14632
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/Taobao/Taobao_remove_ads.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/Taobao/Taobao_remove_ads.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/Taobao/Taobao_remove_ads.js",
       "source": "https://kelee.one/Resource/JavaScript/Taobao/Taobao_remove_ads.js",
       "sha256": "ea9b7e89c78329038e0fc590867c4da4da178ee67e1f6863c14da8e44142917d",
       "size": 3264
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js",
       "source": "https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js",
       "sha256": "5c648b5e1d12cd964ebf58fe50a45e85bfb9ba9beee56b0e2e5d60db36ee8c6d",
       "size": 54799
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/FamilyMart/FamilyMart.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/FamilyMart/FamilyMart.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/FamilyMart/FamilyMart.js",
       "source": "https://kelee.one/Resource/JavaScript/WexinMiniPrograms/FamilyMart/FamilyMart.js",
       "sha256": "463a6a5fb8aab492bbab6f3a7af401d1a815024091e784106fa79fc8ac2ca140",
       "size": 197
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/M_Stand/M_Stand.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/M_Stand/M_Stand.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/M_Stand/M_Stand.js",
       "source": "https://kelee.one/Resource/JavaScript/WexinMiniPrograms/M_Stand/M_Stand.js",
       "sha256": "faebcaf6d2e52f80019bd6342a3c8342a320c03e6c418e523536988fa4e24df5",
       "size": 590
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/T3/T3.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/T3/T3.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/T3/T3.js",
       "source": "https://kelee.one/Resource/JavaScript/WexinMiniPrograms/T3/T3.js",
       "sha256": "276834dc8c3cdf67cc942ffae11c004931f4a317960e380321070cee26385482",
       "size": 173
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/alittle-tea/alittle-tea.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/alittle-tea/alittle-tea.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/alittle-tea/alittle-tea.js",
       "source": "https://kelee.one/Resource/JavaScript/WexinMiniPrograms/alittle-tea/alittle-tea.js",
       "sha256": "5f9f5379b3259a318577bf0e82d54e32815489eaad689ec38f70e1ef1bb17334",
       "size": 188
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/chayanyuese/chayanyuese_remove_ads.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/chayanyuese/chayanyuese_remove_ads.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/chayanyuese/chayanyuese_remove_ads.js",
       "source": "https://kelee.one/Resource/JavaScript/WexinMiniPrograms/chayanyuese/chayanyuese_remove_ads.js",
       "sha256": "b994cd31d4f3b5ab5126c029ed9b7bd61d9f4877242a0f7988f9b837ceb85034",
       "size": 442
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/coco/coco.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/coco/coco.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/coco/coco.js",
       "source": "https://kelee.one/Resource/JavaScript/WexinMiniPrograms/coco/coco.js",
       "sha256": "ce813cb9eaf748630e45569a968cbd5f66d9a7994c8944be553bbbeaf631aad6",
       "size": 231
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/ems/ems.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/ems/ems.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/ems/ems.js",
       "source": "https://kelee.one/Resource/JavaScript/WexinMiniPrograms/ems/ems.js",
       "sha256": "1c9441c9402e5b45563da4d388687e92af9dc2ec893ac9a6fbcd9b11ccdf50ae",
       "size": 280
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/kff/kff.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/kff/kff.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/kff/kff.js",
       "source": "https://kelee.one/Resource/JavaScript/WexinMiniPrograms/kff/kff.js",
       "sha256": "306b166a644e500bc1aed9783fb4e741f150e1f234bc11b4390742b899a21ccd",
       "size": 1253
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/lawson/lawson.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/lawson/lawson.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/lawson/lawson.js",
       "source": "https://kelee.one/Resource/JavaScript/WexinMiniPrograms/lawson/lawson.js",
       "sha256": "f814b6e1b6709ab2881b89aefda7fb36727bbf4c122902ef4a69eb249d2b80bd",
       "size": 235
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/ming/ming.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/ming/ming.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/ming/ming.js",
       "source": "https://kelee.one/Resource/JavaScript/WexinMiniPrograms/ming/ming.js",
       "sha256": "3251c996ac03d26d36a239c83005c557c0a6c67b67e702f56f750edbd7e378b1",
       "size": 170
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/qingju/qingju.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/qingju/qingju.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/qingju/qingju.js",
       "source": "https://kelee.one/Resource/JavaScript/WexinMiniPrograms/qingju/qingju.js",
       "sha256": "3a7ea263ae86afc4634e2aad459eba2433afd9f853a655cfcf354ab2e12a6411",
       "size": 196
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/xiaotucc/xiaotucc.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/xiaotucc/xiaotucc.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/WexinMiniPrograms/xiaotucc/xiaotucc.js",
       "source": "https://kelee.one/Resource/JavaScript/WexinMiniPrograms/xiaotucc/xiaotucc.js",
       "sha256": "353182ef250caa5f34c8cfea3dafa2d36f072ff95f08c82e199dfe3967b6b189",
       "size": 450
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/JavaScript/Zhihu/Zhihu_remove_ads.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/JavaScript/Zhihu/Zhihu_remove_ads.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/JavaScript/Zhihu/Zhihu_remove_ads.js",
       "source": "https://kelee.one/Resource/JavaScript/Zhihu/Zhihu_remove_ads.js",
       "sha256": "7691147ea4e8b438e016c5190bdc4dc819f9f6bbd01f028f17359bd9e9a65a68",
       "size": 7704
     },
     {
       "path": "scripts/vendor/kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js",
       "source": "https://kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js",
       "sha256": "c3dc933b491694109a574b16ed1d77eaf4910ff935bbc53abb8273ae2a907bf6",
       "size": 17497
     },
     {
       "path": "scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js",
       "source": "https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js",
-      "sha256": "99f0cb061fa85077569a3ac91500ec21ec7ce06260a98d786978369820d8c825",
-      "size": 1271136
+      "sha256": "b6cbe02054e8b801a6b56f699d213406872b5140f1dbc552c4ccc9dec1a045dd",
+      "size": 1275739
     },
     {
       "path": "scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js",
       "source": "https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js",
-      "sha256": "5a5e8fdc4d375f4edea088565f9fa2aa8709518bc1ff60ba1eee519bfc8c180f",
-      "size": 1317591
+      "sha256": "33769f6f7e32ad840ee833b84518ebd3ec27d263f39d2abac1a4c0d4ef299de0",
+      "size": 1322443
     },
     {
       "path": "scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js",
       "source": "https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js",
-      "sha256": "c1fc6ca446ebffcd5829fab93f2bff5220602f081148568cff24de50794983ca",
-      "size": 1311522
+      "sha256": "6a856ddcebf177634e7869d5479ecc1e4ae46d3a076b7211e5f6d4bdb36bad1e",
+      "size": 1316138
     },
     {
       "path": "scripts/widgets/airport-traffic.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/widgets/airport-traffic.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/widgets/airport-traffic.js",
       "source": "https://raw.githubusercontent.com/IBL3ND/module/main/airport_widget.js",
       "sha256": "cb0192833fdf5ca00315910709f32e621b3edc26c447100b7a4d7a4e0894baa3",
       "size": 11444
     },
     {
       "path": "scripts/widgets/ip-datacenter.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/widgets/ip-datacenter.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/widgets/ip-datacenter.js",
       "source": "https://raw.githubusercontent.com/magicdan3688/MyProxyScripts/refs/heads/main/ip-dch.js",
       "sha256": "5d9612143fe8e98a04e512d3d1bfcbc8dce7938b714c2af70e5363992445460b",
       "size": 19202
     },
     {
       "path": "scripts/widgets/netspeed.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/widgets/netspeed.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/widgets/netspeed.js",
       "source": "https://raw.githubusercontent.com/IBL3ND/module/main/NetSpeed_Widget.JS",
       "sha256": "28eabe281cfc9c69b4c0e7c4636d73625d201cf42cb7feca32444cb6edbad2d3",
       "size": 3779
     },
     {
       "path": "scripts/widgets/proxy-check.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/widgets/proxy-check.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/widgets/proxy-check.js",
       "source": "https://raw.githubusercontent.com/IBL3ND/module/main/Proxy_Check.JS",
       "sha256": "45cd4e714ddcf0c14b79acb64cd1a2e1b753607fdf6516837faad65aaf89529b",
       "size": 5435
     },
     {
       "path": "scripts/widgets/weather.js",
-      "raw_url": "https://raw.githubusercontent.com/ciallothu/proxy_plugins/main/scripts/widgets/weather.js",
+      "raw_url": "https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/widgets/weather.js",
       "source": "https://raw.githubusercontent.com/IBL3ND/module/main/Weather_Widget.JS",
       "sha256": "7a11d6c32c441ed4e98051c4ca9465479f1827ab5354b252740ddc4efd1b2054",
       "size": 16408

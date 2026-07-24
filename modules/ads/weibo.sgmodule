@@ -92,3 +92,4 @@ DOMAIN-SUFFIX,biz.weibo.com,REJECT,extended-matching,pre-matching
 
 [MITM]
 hostname = %APPEND% *.weibo.cn, *.weibo.com, weibo.com
+
