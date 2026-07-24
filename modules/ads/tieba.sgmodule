@@ -13,3 +13,5 @@ hostname = %APPEND% tiebac.baidu.com
 [Script]
 贴吧json = type=http-response,pattern=^https?:\/\/(tiebac|c\.tieba)\.baidu\.com\/(c\/(s\/sync|f\/(ad\/getSplashAd|frs\/(page|threadlist|generalTabList)|pb\/(pic)?page|excellent\/personalized))$|tiebaads\/commonbatch\?),requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/app2smile/rules/js/tieba-json.js,script-update-interval=0
 贴吧proto = type=http-response,pattern=^https?:\/\/(tiebac|c\.tieba)\.baidu\.com\/c\/(b\/ad\/adBid|f\/(frs\/(page|threadlist|generalTabList)|ad\/getFeedAd|pb\/page|excellent\/personalized))\?cmd,requires-body=1,binary-body-mode=1,max-size=-1,script-path=https://cdn.jsdelivr.net/gh/ciallothu/proxy_plugins@main/scripts/vendor/app2smile/rules/js/tieba-proto.js,argument=per_filter_video_thread={{{per_filter_video}}}
+
+
